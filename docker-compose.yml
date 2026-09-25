@@ -1,0 +1,7 @@
+services:
+  fret:
+    build: .
+    image: fretboard-chord-search:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped

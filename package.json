@@ -1,0 +1,19 @@
+{
+  "name": "fretboard-chord-search",
+  "version": "1.0.0",
+  "private": true,
+  "description": "离线指板和弦形状搜索：枚举音高正确且手指可及的按法",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/main.ts --bundle --minify --target=es2020 --outfile=dist/app.js && cp index.html dist/index.html",
+    "dev": "esbuild src/main.ts --bundle --target=es2020 --outfile=dist/app.js --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "happy-dom": "^20.14.5",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}
